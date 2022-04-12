@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<router-view />
+    <HeaderComponent />
+    <FirstSection />
+    <AboutSection />
+    <StepsSection />
+    <ProductsSection />
+    <FaqSection />
+    <ContactSection />
+    <FooterComponent />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from "./components/HeaderComponent.vue";
+import FirstSection from "./components/FirstSection.vue";
+import AboutSection from "./components/AboutSection.vue";
+import StepsSection from "./components/StepsSection.vue";
+import ProductsSection from "./components/ProductsSection.vue";
+import FaqSection from "./components/FaqSection.vue";
+import ContactSection from "./components/ContactSection.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HeaderComponent,
+    FirstSection,
+    AboutSection,
+    StepsSection,
+    ProductsSection,
+    FaqSection,
+    ContactSection,
+    FooterComponent
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Importamos la hoja de estilos css que tenemos dentro de src */
+@import "./assets/css/styles.css";
 </style>
