@@ -1,26 +1,53 @@
 <template>
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo">
+      <router-link to="/" class="nav__logo">
         <i class="ri-leaf-line nav__logo-icon"></i> Plantex
-      </a>
+      </router-link>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">Home</a>
+            <router-link to="/" class="nav__link" active-class="active-link"
+              >Home</router-link
+            >
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <router-link
+              to="/about"
+              class="nav__link"
+              active-class="active-link"
+              >About</router-link
+            >
           </li>
           <li class="nav__item">
-            <a href="#products" class="nav__link">Products</a>
+            <router-link
+              to="/products"
+              class="nav__link"
+              active-class="active-link"
+              >Products</router-link
+            >
           </li>
           <li class="nav__item">
-            <a href="#faqs" class="nav__link">FAQs</a>
+            <router-link to="/faqs" class="nav__link" active-class="active-link"
+              >FAQs</router-link
+            >
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact Us</a>
+            <router-link
+              to="/contact"
+              class="nav__link"
+              active-class="active-link"
+              >Contact</router-link
+            >
+          </li>
+          <li class="nav__item">
+            <router-link
+              :to="{ name: 'page', params: { id: 'input' } }"
+              class="nav__link"
+              active-class="active-link"
+              >New</router-link
+            >
           </li>
         </ul>
 
