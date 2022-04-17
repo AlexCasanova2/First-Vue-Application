@@ -1,8 +1,7 @@
 <template>
   <section class="product section container" id="products">
     <h2 class="section__title-center">
-      Check out our <br />
-      products
+      Check out our <br /> products
     </h2>
 
     <p class="product__description">
@@ -93,6 +92,6 @@
 </template>
 <script>
 export default {
-    name: 'ProductsSection'
-}
+  name: "ProductsSection",
+};
 </script>

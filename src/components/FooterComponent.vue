@@ -69,12 +69,12 @@
 
     <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
   </footer>
-  <a href="#" class="scrollup" id="scroll-up"> 
-            <i class="ri-arrow-up-fill scrollup__icon"></i>
-        </a>
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-fill scrollup__icon"></i>
+  </a>
 </template>
 <script>
 export default {
-    name: 'FooterComponent'
-}
+  name: "FooterComponent",
+};
 </script>

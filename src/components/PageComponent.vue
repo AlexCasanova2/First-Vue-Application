@@ -4,8 +4,20 @@
       This is a page with optional parameter
     </h2>
     <p class="">{{ id }}</p>
+    <hr />
     <button @click="updateValue()">Update value</button>
-    <h4>{{value}}</h4>
+    <h4>{{ value }}</h4>
+    <input type="text" v-model="name" /><br />
+    {{ name }}
+    <hr />
+    <h2>Directivas condicionales</h2>
+    <input type="number" v-model="age" /><br />
+    <!-- {{age}} -->
+    <p v-if="age && age >= 18">Older</p>
+    <hr />
+    <ol>
+      <li v-for="movie in movies" :key="movie">{{ movie }}</li>
+    </ol>
   </section>
 </template>
 
@@ -34,6 +46,9 @@ export default {
     return {
       id: null,
       value: "Default Value",
+      name: "",
+      age: 26,
+      movies: ["Movie 1", "Movie 2", "Movie 3"],
     };
   },
   //The methods we want to create

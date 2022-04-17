@@ -49,6 +49,14 @@
               >New</router-link
             >
           </li>
+          <li class="nav__item">
+            <router-link
+              :to="{ name: 'test'}"
+              class="nav__link"
+              active-class="active-link"
+              >Test</router-link
+            >
+          </li>
         </ul>
 
         <div class="nav__close" id="nav-close">

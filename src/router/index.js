@@ -10,6 +10,7 @@ import FaqSection from "../components/FaqSection.vue";
 import AboutSection from "../components/AboutSection.vue";
 import PageComponent from "../components/PageComponent.vue";
 import ErrorComponent from "../components/ErrorComponent.vue";
+import TestComponent from "../components/TestComponent.vue";
 
 //Define all routes in the app
 const routes = [
@@ -22,6 +23,7 @@ const routes = [
   { path: "/page/:id?", name: 'page', component: PageComponent },
   { path: "/404", component: ErrorComponent },
   { path: "/:pathMatch(.*)*", redirect: '/404' },
+  { path: "/test", name: 'test', component: TestComponent },
 ];
 
 //Creating the router const with the routes values

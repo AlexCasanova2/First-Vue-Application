@@ -26,39 +26,17 @@
           </div>
         </div>
       </div>
-
-      <form action="" class="contact__form">
-        <div class="contact__inputs">
-          <div class="contact__content">
-            <input type="email" placeholder=" " class="contact__input" />
-            <label for="" class="contact__label">Email</label>
-          </div>
-
-          <div class="contact__content">
-            <input type="text" placeholder=" " class="contact__input" />
-            <label for="" class="contact__label">Subject</label>
-          </div>
-
-          <div class="contact__content contact__area">
-            <textarea
-              name="message"
-              placeholder=" "
-              class="contact__input"
-            ></textarea>
-            <label for="" class="contact__label">Message</label>
-          </div>
-        </div>
-
-        <button class="button button--flex">
-          Send Message
-          <i class="ri-arrow-right-up-line button__icon"></i>
-        </button>
-      </form>
+        <ContactFormComponent />
     </div>
   </section>
 </template>
 <script>
+import ContactFormComponent from "./ContactForm.vue";
+
 export default {
-    name: 'ContactSection'
+    name: 'ContactSection',
+    components: {
+      ContactFormComponent
+    }
 }
 </script>
