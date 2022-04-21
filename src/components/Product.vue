@@ -1,7 +1,5 @@
 <template>
-  <!-- <article class="product__card"> -->
   <div class="product__circle"></div>
-
   <img :src="product.image" alt="" class="product__img" />
 
   <h3 class="product__title">{{ product.name }}</h3>
@@ -18,6 +16,7 @@
   <button class="button--flex product__button" style="margin-right: 32px">
     <i class="ri-shopping-bag-line"></i>
   </button>
+  sdsdsds
   <button class="button--flex favourite__button" value="Add to favourites"
     @click="AddFavourite(product)"
   >

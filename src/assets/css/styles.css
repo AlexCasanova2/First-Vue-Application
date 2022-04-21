@@ -312,6 +312,32 @@ the website, in dark theme
   background-color: var(--first-color);
 }
 
+/*BLOG*/
+.entry__short-description{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+.entry__date{
+  display: block;
+  font-size: 0.8em;
+}
+.blog__content{
+  text-align: left;
+}
+.blog__image{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.image__edit{
+  height: 140px !important;
+  width: 250px !important;
+}
+.default__image{
+  background-image: url("https://picsum.photos/seed/picsum/970/500");
+}
+
 /*=============== HOME ===============*/
 .home{
   padding: 3.5rem 0 2rem;

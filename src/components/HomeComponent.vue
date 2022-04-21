@@ -4,6 +4,7 @@
   <AboutSection />
   <StepsSection />
   <ProductsSection />
+  <LastArticles />
   <FaqSection />
   <ContactSection />
 </template>
@@ -15,6 +16,7 @@ import ContactSection from "../components/ContactSection.vue";
 import StepsSection from "../components/StepsSection.vue";
 import ProductsSection from "../components/ProductsSection.vue";
 import FaqSection from "../components/FaqSection.vue";
+import LastArticles from "../components/LastArticles.vue";
 
 export default {
   name: "HomeComponent",
@@ -25,6 +27,7 @@ export default {
     ProductsSection,
     FaqSection,
     ContactSection,
+    LastArticles
   },
 };
 </script>

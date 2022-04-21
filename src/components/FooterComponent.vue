@@ -67,7 +67,7 @@
       </div>
     </div>
 
-    <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+    <p class="footer__copy">&#169; Plantex. All rigths reserved</p>
   </footer>
   <a href="#" class="scrollup" id="scroll-up">
     <i class="ri-arrow-up-fill scrollup__icon"></i>

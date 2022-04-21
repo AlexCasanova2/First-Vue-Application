@@ -41,22 +41,34 @@
               >Contact</router-link
             >
           </li>
-          <li class="nav__item">
+          <!--<li class="nav__item">
             <router-link
               :to="{ name: 'page', params: { id: 'input' } }"
               class="nav__link"
               active-class="active-link"
               >New</router-link
             >
+          </li>-->
+          <li class="nav__item">
+            <router-link to="/blog" class="nav__link" active-class="active-link"
+              >Blog
+            </router-link>
           </li>
           <li class="nav__item">
+            <form @submit.prevent="goSearch">
+              <input type="text" name="search" v-model="searchString"/>
+              <input type="submit" name="submit" value="search">
+            </form>
+            
+          </li>
+          <!--<li class="nav__item">
             <router-link
               :to="{ name: 'test'}"
               class="nav__link"
               active-class="active-link"
               >Test</router-link
             >
-          </li>
+          </li> -->
         </ul>
 
         <div class="nav__close" id="nav-close">
@@ -79,5 +91,15 @@
 <script>
 export default {
   name: "HeaderComponent",
+  data () {
+    return{
+      searchString: null
+    }
+  },
+  methods: {
+    goSearch() {
+      this.$router.push('/redirect/'+this.searchString);
+    }
+  }
 };
 </script>

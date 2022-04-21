@@ -1,0 +1,36 @@
+<section class="create-article section container" id="create-article">
+  <h2 class="section__title-center" v-if="!isEdit">Create article</h2>
+  <h2 class="section__title-center" v-else>Edit article</h2>
+  <form action="" class="contact__form" @submit.prevent="createArticle()">
+    <div class="contact__inputs">
+      <div class="contact__content">
+        <input type="text" placeholder=" " class="contact__input" name="title" v-model="article.title" />
+
+        <label for="title" class="contact__label">Title</label>
+      </div>
+      <div v-if="submitted && !article.title.required">
+        El campo es obligatorio
+      </div>
+
+      <div class="contact__content contact__area">
+        <textarea name="content" placeholder=" " class="contact__input" v-model="article.content"></textarea>
+        <label for="" class="contact__label">Content</label>
+      </div>
+      <!--<div v-if="submitted && !$v.article.content.required">El campo es obligatorio</div>-->
+
+      <div class="create__image">
+        <div v-if="isEdit && article.image">
+          <div class="blog__image image__edit" :style="{ backgroundImage: `url(${url + 'get-image/' + article.image})` }"
+            :alt="article.title" v-if="article.image"></div>
+        </div>
+        <input type="file" id="file" ref="file" name="file0" @change="fileChange()" />
+        <label for="" class="contact__label">Upload image</label>
+      </div>
+    </div>
+
+    <button class="button button--flex">
+      Create article
+      <i class="ri-arrow-right-up-line button__icon"></i>
+    </button>
+  </form>
+</section>
